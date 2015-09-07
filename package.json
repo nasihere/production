@@ -1,18 +1,12 @@
 {
-  "name": "m-rest",
-  "version": "0.0.1",
+  "name": "m-rest_repository",
+  "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "Nasir",
-  "license": "ISC",
-  "devDependencies": {
-    "grunt-cli": "^0.1.13"
-  },
-  "dependencies": {
-    "grunt-cli": "^0.1.13"
-  },
-  "description": ""
+  "author": "",
+  "license": "ISC"
 }
