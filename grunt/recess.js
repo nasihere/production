@@ -1,8 +1,8 @@
 module.exports = {
 	less: {
         files: [
-            {'app/styles/app.css': ['app/less/app.less']},
-            {'app/styles/material-design-icons.css': ['app/less/md.icon.less']}
+            {'app/app/styles/app.css': ['app/app/less/app.less']},
+            {'app/app/styles/material-design-icons.css': ['app/app/less/md.icon.less']}
         ],
         options: {
           compile: true
@@ -10,10 +10,10 @@ module.exports = {
     },
     angular: {
         files: {
-            'angular/styles/app.min.css': [
-                'libs/jquery/bootstrap/dist/css/bootstrap.css',
-                'app/styles/font.css',
-                'app/styles/app.css'
+            'app/angular/styles/app.min.css': [
+                'app/libs/jquery/bootstrap/dist/css/bootstrap.css',
+                'app/app/styles/font.css',
+                'app/app/styles/app.css'
             ]
         },
         options: {
@@ -22,10 +22,10 @@ module.exports = {
     },
     html: {
         files: {
-            'html/styles/app.min.css': [
-                'libs/jquery/bootstrap/dist/css/bootstrap.css',
-                'app/styles/font.css',
-                'app/styles/app.css'
+            'app/html/styles/app.min.css': [
+                'app/libs/jquery/bootstrap/dist/css/bootstrap.css',
+                'app/app/styles/font.css',
+                'app/app/styles/app.css'
             ]
         },
         options: {

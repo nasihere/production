@@ -29,35 +29,49 @@
           <path d="M 8 80 L 50 0 L 50 100 Z" fill="#fff"></path>
           <path d="M 50 0 L 8 80 L 0 14 Z" fill="rgba(255, 255, 255, 0.6)"></path>
         </svg>
-        <span class="m-l inline">M-rest</span>
+        <span class="m-l inline">M-Rest</span>
       </div>
     </div>
 
     <div class="p-lg panel md-whiteframe-z1 text-color m">
       <div class="m-b text-sm">
-        Login with m-rest restaurant
+        Register to m-rest restaurant
       </div>
       <form name="form">
-        <div class="md-form-group float-label">
+        <div class="md-form-group">
+          <input type="text" class="md-input" ng-model="user.name" required>
+          <label>Name</label>
+        </div>
+        <div class="md-form-group">
           <input type="email" class="md-input" ng-model="user.email" required>
           <label>Email</label>
         </div>
-        <div class="md-form-group float-label">
+
+         <div class="md-form-group">
+          <input type="address" class="md-input" ng-model="user.address" required>
+          <label>Address</label>
+        </div>
+
+        <div class="md-form-group">
+          <input type="phone" class="md-input" ng-model="user.phone" required>
+          <label>Mobile No.</label>
+        </div>
+
+        <div class="md-form-group">
           <input type="password" class="md-input" ng-model="user.password" required>
           <label>Password</label>
-        </div>      
-        <div class="m-b-md">        
+        </div>
+        <div class="m-b-md">
           <label class="md-check">
-            <input type="checkbox"><i class="indigo"></i> Keep me login
+            <input type="checkbox" ng-model="agree" required><i class="indigo"></i> Agree the <a href>terms and policy</a>
           </label>
         </div>
-        <button md-ink-ripple type="submit" class="md-btn md-raised pink btn-block p-h-md">Login</button>
+        <button md-ink-ripple type="submit" class="md-btn md-raised pink btn-block p-h-md">Register</button>
       </form>
     </div>
 
     <div class="p-v-lg text-center">
-      <div class="m-b"><button ui-sref="app.forgot-password" class="md-btn">Forgot password?</button></div>
-      <div>Do not have an account? <button ui-sref="app.register" class="md-btn">Create an account</button></div>
+      <div>Already have an account? <button ui-sref="app.login" class="md-btn">Login</button></div>
     </div>
   </div>
 

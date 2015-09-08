@@ -37,8 +37,8 @@ module.exports = {
                     'textAngular/dist/**',
                     'venturocket-angular-slider/build/**',
                 ],
-                dest: 'libs/angular',
-                cwd:  'bower_components',
+                dest: 'app/libs/angular',
+                cwd:  'app/bower_components',
                 expand: true
             },
             {
@@ -61,8 +61,8 @@ module.exports = {
                     'moment/moment.js',
                     'waves/dist/**'
                 ],
-                dest: 'libs/jquery',
-                cwd:  'bower_components',
+                dest: 'app/libs/jquery',
+                cwd:  'app/bower_components',
                 expand: true
             },
             {
@@ -71,33 +71,33 @@ module.exports = {
                     'font-awesome/css/**',
                     'font-awesome/fonts/**'
                 ],
-                dest: 'libs/assets',
-                cwd:  'bower_components',
+                dest: 'app/libs/assets',
+                cwd:  'app/bower_components',
                 expand: true
             },
-            {src: '**', cwd: 'bower_components/bootstrap/dist/fonts', dest: 'app/fonts', expand: true}
+            {src: '**', cwd: 'app/bower_components/bootstrap/dist/fonts', dest: 'app/app/fonts', expand: true}
         ]
     },
     angular: {
         files: [
-            {expand: true, src: '**', cwd: 'app/api',     dest: 'angular/api'},
-            {expand: true, src: '**', cwd: 'app/apps',    dest: 'angular/apps'},
-            {expand: true, src: '**', cwd: 'app/fonts',   dest: 'angular/fonts'},
-            {expand: true, src: '**', cwd: 'app/i18n',    dest: 'angular/i18n'},
-            {expand: true, src: '**', cwd: 'app/images',  dest: 'angular/images'},
-            {expand: true, src: '**', cwd: 'app/scripts', dest: 'angular/scripts'},
-            {expand: true, src: '**', cwd: 'app/styles',  dest: 'angular/styles'},
-            {expand: true, src: '**', cwd: 'app/views',   dest: 'angular/views'},
-            {src: 'app/index.min.html', dest: 'angular/index.html'}
+            {expand: true, src: '**', cwd: 'app/app/api',     dest: 'app/angular/api'},
+            {expand: true, src: '**', cwd: 'app/app/apps',    dest: 'app/angular/apps'},
+            {expand: true, src: '**', cwd: 'app/app/fonts',   dest: 'app/angular/fonts'},
+            {expand: true, src: '**', cwd: 'app/app/i18n',    dest: 'app/angular/i18n'},
+            {expand: true, src: '**', cwd: 'app/app/images',  dest: 'app/angular/images'},
+            {expand: true, src: '**', cwd: 'app/app/scripts', dest: 'app/angular/scripts'},
+            {expand: true, src: '**', cwd: 'app/app/styles',  dest: 'app/angular/styles'},
+            {expand: true, src: '**', cwd: 'app/app/views',   dest: 'app/angular/views'},
+            {src: 'app/app/index.min.html', dest: 'app/angular/index.html'}
         ]
     },
     html: {
         files: [
-            {expand: true, src: '**', cwd: 'app/api',       dest: 'html/api'},
-            {expand: true, src: '**', cwd: 'app/fonts/',    dest: 'html/fonts/'},
-            {expand: true, src: '**', cwd: 'app/images/',   dest: 'html/images/'},
-            {expand: true, src: '**', cwd: 'app/styles/',   dest: 'html/styles/'},
-            {expand: true, src: '**', cwd: 'swig/scripts/', dest: 'html/scripts/'}
+            {expand: true, src: '**', cwd: 'app/app/api',       dest: 'app/html/api'},
+            {expand: true, src: '**', cwd: 'app/app/fonts/',    dest: 'app/html/fonts/'},
+            {expand: true, src: '**', cwd: 'app/app/images/',   dest: 'app/html/images/'},
+            {expand: true, src: '**', cwd: 'app/app/styles/',   dest: 'app/html/styles/'},
+            {expand: true, src: '**', cwd: 'app/swig/scripts/', dest: 'app/html/scripts/'}
         ]
     }
 };

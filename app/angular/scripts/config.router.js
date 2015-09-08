@@ -37,12 +37,48 @@ angular.module('app')
               }
             }
           })
+
+            .state('app.reg', {
+              url: '/reg',
+              templateUrl: 'apps/reg/reg.html',
+              data : { title: 'Dashboard', folded: true },
+              resolve: load(['apps/reg/reg.js'])
+            })
+
             .state('app.login', {
               url: '/login',
               templateUrl: 'apps/login/login.html',
               data : { title: 'Dashboard', folded: true },
               resolve: load(['apps/login/login.js'])
             })
+            
+            .state('app.register', {
+              url: '/register',
+              templateUrl: 'apps/login/register.html'
+            })
+
+            .state('app.forgot-password', {
+              url: '/forgot-password',
+              templateUrl: 'apps/login/forgot-password.html'
+            })
+
+            .state('app.home', {
+              url: '/home',
+              templateUrl: 'apps/reg/home.html',
+              data : { title: 'Dashboard', folded: true },
+              resolve: load(['apps/reg/reg.js'])
+            })
+
+             .state('app.restaurantList', {
+              url: '/restaurantList',
+              templateUrl: 'apps/reg/restaurantList.html',
+              data : { title: 'Dashboard', folded: true },
+              resolve: load(['apps/reg/restaurantList.js'])
+            })
+            
+            
+
+          
             .state('app.dashboard', {
               url: '/dashboard',
               templateUrl: 'views/pages/dashboard.html',
