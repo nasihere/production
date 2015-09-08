@@ -1,12 +1,12 @@
-/*var http = require('http')
+var http = require('http')
 var port = process.env.PORT || 1337;
 http.createServer(function(req, res) {
   res.writeHead(200, { 'Content-Type': 'text/plain' });
-  res.end('Hello World\n');
+  res.end('Hello World\n Port' + port);
 }).listen(port);
 
+/*
 
-*/
 // global.config = require("./app.config.js");
 
 //Lets require/import the HTTP module
@@ -26,3 +26,4 @@ function handleRequest(request, response){
 var connect = require('connect');
 var serveStatic = require('serve-static');
 connect().use(serveStatic(__dirname)).listen(PORT);
+*/
