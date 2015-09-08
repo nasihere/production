@@ -8,9 +8,11 @@
     "start": "node server.js"
   },
   "dependencies": {
-      "http-server": "^0.6.1",
-      "require-directory": "^2.0.0"
-    },
+    "connect": "^3.4.0",
+    "http-server": "^0.6.1",
+    "require-directory": "^2.0.0",
+    "serve-static": "^1.10.0"
+  },
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-bower-install-simple": "^0.9.3",
@@ -28,5 +30,13 @@
     "require-directory": "^2.0.0"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nasihere/production.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nasihere/production/issues"
+  },
+  "homepage": "https://github.com/nasihere/production#readme"
 }
