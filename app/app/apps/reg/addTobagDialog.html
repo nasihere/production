@@ -1,0 +1,48 @@
+<md-dialog aria-label="Mango (Fruit)">
+  
+    <div >
+      <i class="mdi-content-clear text-lg m-t-sm pull-right" style="padding-right:10px; cursor: pointer;" ng-click="answer('not useful')"></i>
+    </div>
+  <md-content>                
+         
+            <div class="md-list-item-content col-lg-12">
+                  <div class="col-lg-10"><h3 class="text-md">Rotli</h3>
+                    <small class="font-thin">Min Li Chan</small></div>
+                  <div class="md-list-item-content col-lg-2">$22</div>
+            </div>
+          
+            <div class="col-xs-12 col-sm-12 col-md-12 clearboth buttondiv" >
+              <div class="plus-minus-button">
+                  <button class="btn btn-default teal-500 addbagbutton">
+                    <i class="mdi-content-remove text-lg m-t-sm "></i>
+                  </button>
+              </div>
+              
+              <div >
+                <input class="form-control addInput" value="1" type="text">
+              </div>
+              
+              <div class="plus-minus-button">
+                <button class="btn btn-default teal-500 addbagbutton">
+                  <i class="mdi-content-add text-lg m-t-sm "></i>
+                </button>
+              </div>
+            </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-12 ">
+            <button md-ink-ripple="" class="btn btn-fw teal-500" ng-click="answer('useful')" > Add To Bag <div style="" class="md-rip
+ple-container"></div></button>
+            </div>
+
+            <div class="specialInst grey-50">
+                <div class="col-xs-12 col-sm-12 col-md-12 ">
+                <h3 class="text-md">Special Instruction</h3></div>
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                  <textarea class="form-control" rows="1"></textarea>
+                </div>
+            </div>
+          
+  </md-content>
+
+
+</md-dialog>
