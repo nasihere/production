@@ -10,7 +10,7 @@ http.createServer(function(req, res) {
 
 
 
-//global.config = require("./app.config.js");
+// global.config = require("./app.config.js");
 
 //Lets require/import the HTTP module
 var http = require('http');
