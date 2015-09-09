@@ -2,15 +2,17 @@
 var port = process.env.PORT || 1337;
 http.createServer(function(req, res) {
   res.writeHead(200, { 'Content-Type': 'text/plain' });
-  res.end('Hello World\n Port' + port);
+  res.end('Hello World\n');
 }).listen(port);
-
 */
+
+
+
+
 
 // global.config = require("./app.config.js");
 
 //Lets require/import the HTTP module
-var port = process.env.PORT || 1337;
 var http = require('http');
 
 //Lets define a port we want to listen to
