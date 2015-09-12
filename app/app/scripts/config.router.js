@@ -47,14 +47,24 @@ angular.module('app')
 
             .state('app.login', {
               url: '/login',
-              templateUrl: 'apps/login/login.html',
-              data : { title: 'Dashboard', folded: true },
+              views: {
+                  "": { templateUrl: "apps/MasterParent/LoginReg.html" },
+                  "container@login": { controller: 'LoginCtrl', templateUrl: "apps/login/login.html" },
+                },
+              data : { title: 'Verify your phone number', folded: true },
+              
               resolve: load(['apps/login/login.js'])
             })
             
             .state('app.register', {
               url: '/register',
-              templateUrl: 'apps/login/register.html'
+              views: {
+                  "": { templateUrl: "apps/MasterParent/LoginReg.html" },
+                  "container@login": { controller: 'LoginCtrl', templateUrl: "apps/login/register.html" },
+                },
+             data : { title: 'Profile Page', folded: true },
+              
+              resolve: load(['apps/login/login.js'])
             })
 
             .state('app.forgot-password', {

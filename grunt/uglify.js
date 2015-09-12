@@ -1,14 +1,20 @@
 module.exports = {
 	angular:{
     src:[
-      'angular/scripts/app.src.js'
+      'app/angular/scripts/app.src.js'
     ],
-    dest:'angular/scripts/app.min.js'
+    dest:'app/angular/scripts/app.min.js'
+  },
+  apps:{
+    src:[
+      'app/angular/scripts/apps.src.js'
+    ],
+    dest:'app/angular/scripts/apps.min.js'
   },
   html:{
     src:[
-      'html/scripts/app.src.js'
+      'app/html/scripts/app.src.js'
     ],
-    dest:'html/scripts/app.min.js'
+    dest:'app/html/scripts/app.min.js'
   }
 }

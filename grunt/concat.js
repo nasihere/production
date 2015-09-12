@@ -26,13 +26,7 @@ module.exports = {
       'app/libs/angular/angular-translate-storage-cookie/angular-translate-storage-cookie.js',
       'app/libs/angular/angular-translate-storage-local/angular-translate-storage-local.js',
      
-      'app/libs/angular/angular-loading-bar/build/loading-bar.js',
-      
-      'app/app/scripts/app.js',
-      'app/app/scripts/*.js',
-      'app/app/scripts/directives/*.js',
-      'app/app/scripts/services/*.js',
-      'app/app/scripts/filters/*.js'
+      'app/libs/angular/angular-loading-bar/build/loading-bar.js'
     ],
     dest:'app/angular/scripts/app.src.js'
   },
@@ -44,5 +38,15 @@ module.exports = {
       'app/html/scripts/*.js'
     ],
     dest:'app/html/scripts/app.src.js'
-  }
+  },
+  apps:{
+    src:[
+      'app/app/scripts/app.js',
+      'app/app/scripts/*.js',
+      'app/app/scripts/directives/*.js',
+      'app/app/scripts/services/*.js',
+      'app/app/scripts/filters/*.js'
+    ],
+    dest:'app/angular/scripts/apps.src.js'
+  },
 }
