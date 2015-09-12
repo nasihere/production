@@ -1,18 +1,22 @@
   <div class="row">
-    <div class="col-sm-4" ng-repeat="item in RestList">
-      <div class="panel panel-card">
-        <div class="item">
-          <img ng-src="../gallery/main/{{item.img}}" class="w-full r-t imageCursor" ui-sref="app.reg" alt="Washed Out">
+
+
+
+
+<div class="col-sm-6">
+<div class="md-list md-whiteframe-z0 bg-white m-b">
+        <div class="md-list-item"  ng-repeat="item in RestList | filter: app.search.content">
+          <div class="md-list-item-left">
+            <img src="../gallery/main/{{item.img}}" class="w-full circle">
+          </div>
+          <div class="md-list-item-content">
+            <h3 class="text-md">{{item.Name}}  {{item.Rating}} Rating</h3>
+            <small class="font-thin">{{item.Special}} - Price: {{item.Min}}</small>
+          </div>
         </div>
-        <a md-ink-ripple class="md-btn md-raised md-fab brown m-r md-fab-offset pull-right"><span class="text-white">23</span></a>
-        <div class="p">
-          <h4>{{item.Name}}</h4>
-          <div><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>({{item.Rating}} Rating) </div>
-           <div style="padding-top:5px">{{item.Special}}ß</div>
-           <div><span>Min:</span><span>  <b>{{item.Min}}</b></span></div>
+        
         </div>
       </div>
-    </div>
- 
+    
  
   </div>

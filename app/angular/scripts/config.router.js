@@ -49,7 +49,7 @@ angular.module('app')
               url: '/login',
               views: {
                   "": { templateUrl: "apps/MasterParent/LoginReg.html" },
-                  "container@login": { controller: 'LoginCtrl', templateUrl: "apps/login/login.html" },
+                  "container@": { controller: 'LoginCtrl', templateUrl: "apps/login/login.html" },
                 },
               data : { title: 'Verify your phone number', folded: true },
               
@@ -59,8 +59,7 @@ angular.module('app')
             .state('app.register', {
               url: '/register',
               views: {
-                  "": { templateUrl: "apps/MasterParent/LoginReg.html" },
-                  "container@login": { controller: 'LoginCtrl', templateUrl: "apps/login/register.html" },
+                  "container@": { controller: 'LoginCtrl', templateUrl: "apps/login/register.html" },
                 },
              data : { title: 'Profile Page', folded: true },
               
@@ -81,9 +80,21 @@ angular.module('app')
 
              .state('app.restaurantList', {
               url: '/restaurantList',
+              views: {
+                  "container@": {  controller: 'RestListCtrl',templateUrl: "apps/RestNames/RestList.html" },
+                  'content@': {
+                       templateUrl: 'apps/RestNames/content.html'
+                   }
+                },   
+              data : { title: 'Restaurant List', folded: true },
+              resolve: load(['apps/RestNames/RestList.js'])
+            })
+            
+             .state('app.restaurantDetails', {
+              url: '/restaurantList',
               templateUrl: 'apps/reg/restaurantList.html',
               views: {
-                  "container@": { controller: 'RestListCtrl', templateUrl: "apps/RestNames/RestList.html" },
+                  "container@": { controller: 'RestListCtrl', templateUrl: "apps/RestNames/RestDetails.html" },
                   'content@': {
                       templateUrl: 'apps/RestNames/content.html'
                    }
@@ -92,8 +103,6 @@ angular.module('app')
               data : { title: 'Restaurant List', folded: true },
               resolve: load(['apps/RestNames/RestList.js'])
             })
-            
-            
 
           
             .state('app.dashboard', {

@@ -21,5 +21,6 @@ app.controller('RestListCtrl', ['$scope', '$state', '$stateParams', function($sc
       { "Name":"Zamzam Restaurant", "Rating":"15", "Min":"10 Rs", "Special" : "Pizza,Italian,chinese", "img":"restaurant-3-hotel-barcelo-maya-palace-deluxe54-10456.jpg"  }
     ];
 
+//app.search.content
 
 }]);

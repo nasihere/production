@@ -14,11 +14,11 @@
     <div class="pull-right" ui-view="navbar@"></div>
     <!-- / -->
     <!-- Search form -->
-    <div id="search" class="pos-abt w-full h-full" ng-show="app.search.show" ng-class="$state.current.data.theme ? $state.current.data.theme.primary : app.setting.theme.primary">
+    <div id="search" class="pos-abt w-full h-full"  ng-class="$state.current.data.theme ? $state.current.data.theme.primary : app.setting.theme.primary">
       <div class="box">
         <div class="box-col w-56 text-center">
           <!-- hide search form -->
-          <a md-ink-ripple class="navbar-item inline" ng-click="app.search.show=false; app.search.content=''"><i class="mdi-navigation-arrow-back i-24"></i></a>
+          <a md-ink-ripple class="navbar-item inline" ui-sref="app.login"><i class="mdi-navigation-arrow-back i-24"></i></a>
         </div>
         <div class="box-col v-m">
           <!-- bind to app.search.content -->
@@ -40,3 +40,4 @@
   </div>
   <!-- / -->
 </div>
+
