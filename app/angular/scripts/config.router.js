@@ -82,8 +82,15 @@ angular.module('app')
              .state('app.restaurantList', {
               url: '/restaurantList',
               templateUrl: 'apps/reg/restaurantList.html',
-              data : { title: 'Dashboard', folded: true },
-              resolve: load(['apps/reg/restaurantList.js'])
+              views: {
+                  "container@": { controller: 'RestListCtrl', templateUrl: "apps/RestNames/RestList.html" },
+                  'content@': {
+                      templateUrl: 'apps/RestNames/content.html'
+                   }
+                },
+
+              data : { title: 'Restaurant List', folded: true },
+              resolve: load(['apps/RestNames/RestList.js'])
             })
             
             
