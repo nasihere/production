@@ -45,7 +45,6 @@ app.controller('RestListCtrl', ['$scope', '$state', '$stateParams', function($sc
       { "Name":"Zamzam Restaurant", "Rating":1, "Min":"10 Rs", "Special" : "Pizza,Italian,chinese", "img":"restaurant-3-hotel-barcelo-maya-palace-deluxe54-10456.jpg", "Address":"390 Monroe St, Santa Clara 95020"  }
     ];
 $scope.getNumber = function(num) {
-  alert(num)
     return new Array(num);   
 }
 //app.search.content

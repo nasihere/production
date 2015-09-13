@@ -135,7 +135,6 @@ app.controller('RestItemsCtrl', ['$scope', '$state', '$stateParams', function($s
 
       ];
 $scope.getNumber = function(num) {
-  alert(num)
     return new Array(num);   
 }
 //app.search.content
