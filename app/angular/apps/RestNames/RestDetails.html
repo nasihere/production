@@ -4,12 +4,15 @@
         <div class="item">
           <img ng-src="../gallery/main/{{item.img}}" class="w-full r-t imageCursor" ui-sref="app.reg" alt="Washed Out">
         </div>
-        <a md-ink-ripple class="md-btn md-raised md-fab brown m-r md-fab-offset pull-right"><span class="text-white">23</span></a>
+        <a md-ink-ripple class="md-btn md-raised md-fab brown m-r md-fab-offset pull-right"><span class="text-white">{{item.Rating}}</span></a>
         <div class="p">
           <h4>{{item.Name}}</h4>
-          <div><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>({{item.Rating}} Rating) </div>
-           <div style="padding-top:5px">{{item.Special}}ß</div>
-           <div><span>Min:</span><span>  <b>{{item.Min}}</b></span></div>
+          <h4>{{item.Address}}</h4>
+          <div>
+            <i  ng-repeat="i in getNumber(item.Rating) track by $index" class="fa fa-star-o"></i>
+            ({{item.Rating}} Rating) </div>
+           <div style="padding-top:5px">{{item.Special}}</div>
+           <div><span>Price Min:</span><span>  <b>{{item.Min}}</b></span></div>
         </div>
       </div>
     </div>
