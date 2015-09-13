@@ -1,0 +1,33 @@
+  <div class="row">
+
+<div class="col-sm-6">
+<div class="md-list md-whiteframe-z0 bg-white m-b" ng-repeat="maincat in RestList">
+        <h3 class="text-center">{{maincat.Main}}</h3>
+        <div ng-repeat="item in maincat.Items | filter: app.search.content"  >
+
+
+
+    <div  class="panel-card bg-white p clearfix m-b-sm b-l b-l-2x r ng-scope b-l-info">
+      <a ui-sref="app.page.profile" class="pull-left m-r">
+        <img ng-src="../gallery/main/{{item.Picture}}" class="w-40 rounded" src="images/a10.jpg">
+      </a>
+      <div class="pull-right text-sm text-muted">
+        <span class="ng-binding">Rs.{{item.Price}}</span>
+        <i class="m-l-sm"  aria-hidden="false"></i><br />
+        <button class="btn btn-icon btn-default"><i class="fa fa-plus"></i></button>
+      </div>
+      <div class="clear">
+        <div><a ui-sref="app.inbox.detail({id:inbox.id})" class="text-md ng-binding" href="#/app/inbox/10">{{item.Name}}  </a><span class="label bg-light m-l-sm ng-binding">{{item.Type}}</span></div>
+        <div class="text-ellipsis m-t-xs text-muted-dk text-sm ng-binding">{{item.Description}}  </div>
+      </div>      
+    </div>
+
+
+        
+        </div>
+        
+        </div>
+      </div>
+    
+ 
+  </div>

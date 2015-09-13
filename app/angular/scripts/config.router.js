@@ -103,6 +103,20 @@ angular.module('app')
             })
             
 
+
+             .state('app.restaurantItems', {
+              url: '/restaurantItems',
+              views: {
+                  "container@": {  controller: 'RestItemsCtrl',templateUrl: "apps/RestItems/RestItem.html" },
+                  'content@': {
+                       templateUrl: 'apps/RestItems/content.html'
+                   }
+                },   
+              data : { title: 'Restaurant List', folded: true, type:"list",theme: { primary: 'blue'} },
+              resolve: load(['apps/RestItems/RestItem.js'])
+            })
+            
+
           
             .state('app.dashboard', {
               url: '/dashboard',

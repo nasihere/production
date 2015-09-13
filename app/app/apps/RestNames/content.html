@@ -18,11 +18,11 @@
       <div class="box">
         <div class="box-col w-56 text-center">
           <!-- hide search form -->
-          <a md-ink-ripple class="navbar-item inline" ui-sref="app.login"><i class="mdi-navigation-arrow-back i-24"></i></a>
+          <a md-ink-ripple class="navbar-item inline" ><i class="mdi-action-search i-24"></i></a>
         </div>
         <div class="box-col v-m">
           <!-- bind to app.search.content -->
-          <input class="form-control input-lg no-bg no-border" placeholder="Search" ng-model="app.search.content">
+          <input class="form-control input-lg  no-border" placeholder="What are you hungry for?" ng-model="app.search.content" style="border-radius:50px">
         </div>
         <div class="box-col w-56 text-center">
           <a ng-hide="$state.current.data.type == 'grid'"  ui-sref="app.restaurantDetails" md-ink-ripple class="navbar-item inline"><i class="mdi-image-grid-on i-24"></i></a>
