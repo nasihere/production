@@ -1,4 +1,4 @@
-grunt build:angu;ar
+grunt build:angular
 git add .
 git commit -m "update"
 git push origin master
