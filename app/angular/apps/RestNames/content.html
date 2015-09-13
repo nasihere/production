@@ -25,7 +25,11 @@
           <input class="form-control input-lg no-bg no-border" placeholder="Search" ng-model="app.search.content">
         </div>
         <div class="box-col w-56 text-center">
-          <a md-ink-ripple class="navbar-item inline"><i class="mdi-av-mic i-24"></i></a>
+          <a ng-hide="$state.current.data.type == 'grid'"  ui-sref="app.restaurantDetails" md-ink-ripple class="navbar-item inline"><i class="mdi-image-grid-on i-24"></i></a>
+
+           <a ng-hide="$state.current.data.type == 'list'" ui-sref="app.restaurantList" md-ink-ripple class="navbar-item inline"><i class="mdi-editor-format-list-bulleted i-24"></i></a>
+
+
         </div>
       </div>
     </div>

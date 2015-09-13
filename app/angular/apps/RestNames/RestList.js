@@ -13,14 +13,41 @@ app.controller('RestListCtrl', ['$scope', '$state', '$stateParams', function($sc
     }*/
     var vm = $scope;
     vm.RestList = [
-      { "Name":"Swagat Indian Cuisine", "Rating":"32", "Min":"25 Rs", "Special" : "Pizza,Italian,chinese", "img":"family-restaurant.jpg" },
+      { "Name":"Swagat Indian Cuisine", "Rating":5, "Min":"25 Rs", "Special" : "Pizza,Italian,chinese", "img":"family-restaurant.jpg", "Address":"3205 Northwood Dr, #111 Concord CA 94520" },
 
-      { "Name":"Indian Bazaar", "Rating":"55", "Min":"34 Rs", "Special" : "chinese", "img":"sjfaskasd.jpg"  },
-      { "Name":"Milipatas", "Rating":"25", "Min":"22 Rs", "Special" : "Italian,chinese", "img":"restaurant photo.jpg"  },
-      { "Name":"Delhi Darbar", "Rating":"35", "Min":"54 Rs", "Special" : "chinese", "img":"rest2.jpg"  },
-      { "Name":"Zamzam Restaurant", "Rating":"15", "Min":"10 Rs", "Special" : "Pizza,Italian,chinese", "img":"restaurant-3-hotel-barcelo-maya-palace-deluxe54-10456.jpg"  }
+      { "Name":"Indian Bazaar", "Rating":4, "Min":"34 Rs", "Special" : "chinese", "img":"sjfaskasd.jpg", "Address":"390 Monroe St, Santa Clara 95020"  },
+      { "Name":"Milipatas", "Rating":3, "Min":"22 Rs", "Special" : "Italian,chinese", "img":"restaurant photo.jpg", "Address":"690 Glendale Ave, verdugo RD CA 94520"  },
+      { "Name":"Delhi Darbar", "Rating":2, "Min":"54 Rs", "Special" : "chinese", "img":"rest2.jpg", "Address":"3205 Northwood Dr, #111 Concord CA 94520"  },
+      { "Name":"Zamzam Restaurant", "Rating":1, "Min":"10 Rs", "Special" : "Pizza,Italian,chinese", "img":"restaurant-3-hotel-barcelo-maya-palace-deluxe54-10456.jpg", "Address":"390 Monroe St, Santa Clara 95020"  },
+        { "Name":"Swagat Indian Cuisine", "Rating":5, "Min":"25 Rs", "Special" : "Pizza,Italian,chinese", "img":"family-restaurant.jpg", "Address":"3205 Northwood Dr, #111 Concord CA 94520" },
+
+      { "Name":"Indian Bazaar", "Rating":4, "Min":"34 Rs", "Special" : "chinese", "img":"sjfaskasd.jpg", "Address":"390 Monroe St, Santa Clara 95020"  },
+      { "Name":"Milipatas", "Rating":3, "Min":"22 Rs", "Special" : "Italian,chinese", "img":"restaurant photo.jpg", "Address":"690 Glendale Ave, verdugo RD CA 94520"  },
+      { "Name":"Delhi Darbar", "Rating":2, "Min":"54 Rs", "Special" : "chinese", "img":"rest2.jpg", "Address":"3205 Northwood Dr, #111 Concord CA 94520"  },
+      { "Name":"Zamzam Restaurant", "Rating":1, "Min":"10 Rs", "Special" : "Pizza,Italian,chinese", "img":"restaurant-3-hotel-barcelo-maya-palace-deluxe54-10456.jpg", "Address":"390 Monroe St, Santa Clara 95020"  },
+        { "Name":"Swagat Indian Cuisine", "Rating":5, "Min":"25 Rs", "Special" : "Pizza,Italian,chinese", "img":"family-restaurant.jpg", "Address":"3205 Northwood Dr, #111 Concord CA 94520" },
+
+      { "Name":"Indian Bazaar", "Rating":4, "Min":"34 Rs", "Special" : "chinese", "img":"sjfaskasd.jpg", "Address":"390 Monroe St, Santa Clara 95020"  },
+      { "Name":"Milipatas", "Rating":3, "Min":"22 Rs", "Special" : "Italian,chinese", "img":"restaurant photo.jpg", "Address":"690 Glendale Ave, verdugo RD CA 94520"  },
+      { "Name":"Delhi Darbar", "Rating":2, "Min":"54 Rs", "Special" : "chinese", "img":"rest2.jpg", "Address":"3205 Northwood Dr, #111 Concord CA 94520"  },
+      { "Name":"Zamzam Restaurant", "Rating":1, "Min":"10 Rs", "Special" : "Pizza,Italian,chinese", "img":"restaurant-3-hotel-barcelo-maya-palace-deluxe54-10456.jpg", "Address":"390 Monroe St, Santa Clara 95020"  },
+        { "Name":"Swagat Indian Cuisine", "Rating":5, "Min":"25 Rs", "Special" : "Pizza,Italian,chinese", "img":"family-restaurant.jpg", "Address":"3205 Northwood Dr, #111 Concord CA 94520" },
+
+      { "Name":"Indian Bazaar", "Rating":4, "Min":"34 Rs", "Special" : "chinese", "img":"sjfaskasd.jpg", "Address":"390 Monroe St, Santa Clara 95020"  },
+      { "Name":"Milipatas", "Rating":3, "Min":"22 Rs", "Special" : "Italian,chinese", "img":"restaurant photo.jpg", "Address":"690 Glendale Ave, verdugo RD CA 94520"  },
+      { "Name":"Delhi Darbar", "Rating":2, "Min":"54 Rs", "Special" : "chinese", "img":"rest2.jpg", "Address":"3205 Northwood Dr, #111 Concord CA 94520"  },
+      { "Name":"Zamzam Restaurant", "Rating":1, "Min":"10 Rs", "Special" : "Pizza,Italian,chinese", "img":"restaurant-3-hotel-barcelo-maya-palace-deluxe54-10456.jpg", "Address":"390 Monroe St, Santa Clara 95020"  },
+        { "Name":"Swagat Indian Cuisine", "Rating":5, "Min":"25 Rs", "Special" : "Pizza,Italian,chinese", "img":"family-restaurant.jpg", "Address":"3205 Northwood Dr, #111 Concord CA 94520" },
+
+      { "Name":"Indian Bazaar", "Rating":4, "Min":"34 Rs", "Special" : "chinese", "img":"sjfaskasd.jpg", "Address":"390 Monroe St, Santa Clara 95020"  },
+      { "Name":"Milipatas", "Rating":3, "Min":"22 Rs", "Special" : "Italian,chinese", "img":"restaurant photo.jpg", "Address":"690 Glendale Ave, verdugo RD CA 94520"  },
+      { "Name":"Delhi Darbar", "Rating":2, "Min":"54 Rs", "Special" : "chinese", "img":"rest2.jpg", "Address":"3205 Northwood Dr, #111 Concord CA 94520"  },
+      { "Name":"Zamzam Restaurant", "Rating":1, "Min":"10 Rs", "Special" : "Pizza,Italian,chinese", "img":"restaurant-3-hotel-barcelo-maya-palace-deluxe54-10456.jpg", "Address":"390 Monroe St, Santa Clara 95020"  }
     ];
-
+$scope.getNumber = function(num) {
+  alert(num)
+    return new Array(num);   
+}
 //app.search.content
 
 }]);

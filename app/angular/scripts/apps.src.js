@@ -436,23 +436,22 @@ angular.module('app')
                        templateUrl: 'apps/RestNames/content.html'
                    }
                 },   
-              data : { title: 'Restaurant List', folded: true },
+              data : { title: 'Restaurant List', folded: true, type:"list",theme: { primary: 'blue'} },
+              resolve: load(['apps/RestNames/RestList.js'])
+            })
+
+             .state('app.restaurantDetails', {
+              url: '/restaurantDetails',
+              views: {
+                  "container@": {  controller: 'RestListCtrl',templateUrl: "apps/RestNames/RestDetails.html" },
+                  'content@': {
+                       templateUrl: 'apps/RestNames/content.html'
+                   }
+                },   
+              data : { title: 'Restaurant List', folded: true, type:"grid",theme: { primary: 'blue'} },
               resolve: load(['apps/RestNames/RestList.js'])
             })
             
-             .state('app.restaurantDetails', {
-              url: '/restaurantList',
-              templateUrl: 'apps/reg/restaurantList.html',
-              views: {
-                  "container@": { controller: 'RestListCtrl', templateUrl: "apps/RestNames/RestDetails.html" },
-                  'content@': {
-                      templateUrl: 'apps/RestNames/content.html'
-                   }
-                },
-
-              data : { title: 'Restaurant List', folded: true },
-              resolve: load(['apps/RestNames/RestList.js'])
-            })
 
           
             .state('app.dashboard', {

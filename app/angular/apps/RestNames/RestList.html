@@ -10,8 +10,25 @@
             <img src="../gallery/main/{{item.img}}" class="w-full circle">
           </div>
           <div class="md-list-item-content">
-            <h3 class="text-md">{{item.Name}}  {{item.Rating}} Rating</h3>
-            <small class="font-thin">{{item.Special}} - Price: {{item.Min}}</small>
+                <div class="pull-right">
+                  <div class="col-sm-12">
+                    <span class="pull-right" ng-repeat="i in getNumber(item.Rating) track by $index">
+                        <i class="mdi-action-star-rate i-20 text-muted-dk"></i>
+                    </span>
+                </div>
+
+                <div class="col-sm-12">
+
+                <span  class="pull-right">
+                  <a class=" btn btn-rounded btn-info">Order</a>
+
+                </span>
+                </div>
+                </div>
+              <h3 class="text-md">{{item.Name}}  </h3>
+            
+               
+            <small class="font-thin">{{item.Address}}</small>
           </div>
         </div>
         
