@@ -1,0 +1,32 @@
+ <div class="p-lg panel md-whiteframe-z1 text-color m">
+      <div class="m-b text-sm">
+      
+      <div class="m-b text-sm">
+        Register to m-rest restaurant
+      </div>
+      <form name="form">
+        <div class="md-form-group">
+          <input type="text" class="md-input" ng-model="user.name" required>
+          <label>Name</label>
+        </div>
+        <div class="md-form-group">
+          <input type="text" class="md-input" ng-model="user.address" required>
+          <label>Address</label>
+        </div>
+
+
+        
+        <div class="m-b-md">
+          <label class="md-check">
+            <input type="checkbox" ng-model="agree" required><i class="indigo"></i> Agree the <a href>terms and policy</a>
+          </label>
+        </div>
+        <button md-ink-ripple type="submit" class="md-btn md-raised pink btn-block p-h-md">Register</button>
+      </form>
+    </div>
+
+    <div class="p-v-lg text-center">
+      <div>Already have an account? <button ui-sref="app.login" class="md-btn">Login</button></div>
+  </div>
+      
+    </div>

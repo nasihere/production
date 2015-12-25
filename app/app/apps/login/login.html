@@ -1,0 +1,36 @@
+ <div class="p-lg panel md-whiteframe-z1 text-color m">
+      <div class="m-b text-sm">
+      
+
+        <div ng-show="!verifyphone">
+
+ <label>Enter your phone number below to get started</label>
+<div class="md-form-group float-label">
+  <input type="number" class="md-input" ng-model="number" required>
+  <label>Mobile</label>
+
+</div>
+
+
+  <button md-ink-ripple ng-click="SendSMS(number)" type="button" class="md-btn md-raised pink btn-block p-h-md">Login</button>
+</div>
+
+<div ng-show="verifyphone" class="md-form-group float-label">
+
+ <label>  Thanks! Did you get a SMS PIN on {{number}}? <br/>
+  Enter it here:</label>
+<div class="md-form-group float-label">
+  <input type="number" class="md-input" ng-model="pin" required>
+  <label>PIN</label>
+</div>
+
+ <button md-ink-ripple ng-click="VerifySMS(number)" type="button" class="md-btn md-raised blue btn-block p-h-md">Verify</button>
+
+</div>
+
+
+
+    <div class="p-v-lg text-center">
+      <div class="m-b">Restaurant Messenger will send a one time SMS message to verify your phone number. </div>
+      <div>Do not have an account? <button ui-sref="app.register" class="md-btn">Create an account</button></div>
+    </div></div></div>
