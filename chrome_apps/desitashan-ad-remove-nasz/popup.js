@@ -33,6 +33,7 @@ function onPageDetailsReceived(pageDetails)  {
     //alert(pageDetails.video)
     document.getElementById('videoplayer').src = pageDetails.video; 
     document.getElementById('videolink').href=pageDetails.video;
+    setTimeout(function(){document.getElementById('videolink').click(); } ,1000);
 }
 
 // Global reference to the status display SPAN
