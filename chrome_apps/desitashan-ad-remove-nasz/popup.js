@@ -31,14 +31,26 @@ function onPageDetailsReceived(pageDetails)  {
     //  vid.src = pageDetails.video;
     //  vid.load();
     //alert(pageDetails.video)
-    if (pageDetails.video == ""){
-       document.getElementById('status').innerHTML = "No Video link Found. Are you sure page loaded successfully";
+    if (pageDetails.video == "" || pageDetails.video == undefined){
+       document.getElementById('status').innerHTML = "No Video link Found.";
        return;
     }
-    document.getElementById('videoplayer').src = pageDetails.video; 
-    document.getElementById('videolink').href=pageDetails.video;
-    if (pageDetails.videomap.length == 0 && pageDetails.video){
-          setTimeout(function(){document.getElementById('videolink').click(); } ,1000);
+    else{
+        if (pageDetails.video){
+            document.getElementById('videoplayer').src = pageDetails.video; 
+            document.getElementById('videolink').href=pageDetails.video;
+            if (pageDetails.videomap.length == 0){
+                  setTimeout(function(){document.getElementById('videolink').click(); } ,1000);
+            }
+            else{
+                var vid = document.getElementById('videolib');
+                vid.innerHTML = "";
+                for(var i =0; i <= pageDetails.videomap.length - 1; i++){
+                    vid.innerHTML += '<video  controls><source src=' + pageDetails.videomap[i] + ' ></source></video>'; 
+                    
+                }
+            }
+        }
     }
 }
 

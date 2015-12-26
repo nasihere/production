@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "NaszAdvFree",
     "description": "Skip Desi Tashan Advertise and promo videos and Make PC virus free.",
-    "version": "0.3",
+    "version": "0.4",
     "background": {
         "scripts": ["event.js"],
         "persistent": false
