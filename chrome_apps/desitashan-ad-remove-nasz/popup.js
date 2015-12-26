@@ -31,9 +31,15 @@ function onPageDetailsReceived(pageDetails)  {
     //  vid.src = pageDetails.video;
     //  vid.load();
     //alert(pageDetails.video)
+    if (pageDetails.video == ""){
+       document.getElementById('status').innerHTML = "No Video link Found. Are you sure page loaded successfully";
+       return;
+    }
     document.getElementById('videoplayer').src = pageDetails.video; 
     document.getElementById('videolink').href=pageDetails.video;
-    setTimeout(function(){document.getElementById('videolink').click(); } ,1000);
+    if (pageDetails.videomap.length == 0 && pageDetails.video){
+          setTimeout(function(){document.getElementById('videolink').click(); } ,1000);
+    }
 }
 
 // Global reference to the status display SPAN

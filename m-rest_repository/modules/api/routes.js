@@ -18,6 +18,7 @@ app.get('/TOKEN', function (req, res) {
 });
 
 
+
 app.get('/WMG_BANKER_PROFILE_VIEWER', function (req, res) {
 	res.header ('Access-Control-Allow-Origin', '*');	
 	test.WMG_BANKER_PROFILE_VIEWER(TST_DATA.TD_WMG_BANKER_PROFILE_VIEWER,function(chunk)

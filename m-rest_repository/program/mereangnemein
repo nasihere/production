@@ -1,0 +1,9 @@
+#/usr/bin/open -a "/Applications/Google Chrome.app" 'http://www.desi-tashan.com/category/tv-serials/star-plus2/mere-angne-mein/'
+
+
+
+
+/usr/bin/open -a "/Applications/Google Chrome.app" 'http://www.desi-tashan.com/mere-angne-mein-15th-september-2015-episode-watch-online/'
+
+
+$(".post-content").find("p").find("a")
